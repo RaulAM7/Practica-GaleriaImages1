@@ -1,0 +1,25 @@
+section {
+    width: 600px;
+    height: 430px;
+    display: flex;
+}
+
+section img {
+    width: 0;
+    flex-grow: 1; /*dentro de la caja flexible tendra que ocupar el tamaño que pueda*/
+    object-fit: cover;/* para que se vea bien le decimos que cubra todo el espacio */
+    opacity: 0.8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*
+https://x.com/midudev/status/1845537445397336366
+tutorial
+*/
